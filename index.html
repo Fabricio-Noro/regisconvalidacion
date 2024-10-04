@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login y Registro</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">TECNM</h2>
+        <nav class="interseccion">
+            <a href="#">Informacion educativa</a>
+            <a href="#">Oferta educativa</a>
+            <a href="#">Comunidad Academica</a>
+            <button class="btn">Iniciar Sesión</button>
+        </nav>
+    </header>
+    <div class="fondo">
+        <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="contenedor-form login">
+
+            <h2>Iniciar Sesión</h2>
+
+            <form action="#">
+
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label for="#">Correo</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input type="password" id="numeroControl"  required><br><br>
+                    <label name="numeroControl">NoControl</label><br>
+                    <div class="mensaje" id="comentario"></div>
+                </div>
+
+                <div class="recordar">
+                    <label for="#"><input type="checkbox"> Recordar Sesión</label>
+                    <a href="#">Olvido la Contraseña</a>
+                </div>
+
+                <button type="submit" class="btnI"> Iniciar Sesión
+                </button>
+
+                <div class="Registrar">
+                    <p>¿No tienes cuenta?<a href="#" class="registrar-link">Registrarse</a></p>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="contenedor-form registrar">
+            <h2>Registrarse</h2>
+            <div class="scrollable-content">
+                <form action="#">
+
+                    <div class="contenedor-input">
+                        <span class="icono"><i class="fa-solid fa-n"></i></span>
+                        <input type="text" required>
+                        <label for="#">Numero de Control</label>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <span class="icono"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label for="#">Apellido paterno </label>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <span class="icono"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label for="#">Apellido materno </label>
+
+                    </div>
+
+                    <div class="contenedor-input">
+                        <span class="icono"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label for="#">Nombre </label>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <div class="select-wrapper">
+                            <select class="Genero" name="genero" required>
+                                <option value="" disabled selected>Selecciona tu género</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="indefinido">Indefinido</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <input type="date" required id="fecha-nacimiento" name="">
+
+                    </div>
+
+                    <div class="contenedor-input">
+                        <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text" required>
+                        <label for="#">Correo </label>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <span class="icono"><i class="fa-solid fa-phone"></i></span>
+                        <input type="text" required>
+                        <label for="#">Celular</label>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <span class="icono"><i class="fa-solid fa-location-arrow"></i></span>
+                        <input type="text" required>
+                        <label for="#">Dirección </label>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <div class="select-wrapper">
+                            <select class="Genero" name="genero" required>
+                                <option value="" disabled selected>Selecciona el pediodo escolor de ingreso</option>
+                                <option value="2015">ENE-JUN 2015</option>
+                                <option value="2016">ENE-JUN 2016</option>
+                                <option value="2017">ENE-JUN 2017</option>
+                                <option value="2018">ENE-JUN 2018</option>
+                                <option value="2019">ENE-JUN 2019</option>
+                                <option value="2020">ENE-JUN 2020</option>
+                                <option value="2021">ENE-JUN 2021</option>
+                                <option value="2022">ENE-JUN 2022</option>
+                                <option value="2023">ENE-JUN 2023</option>
+                                <option value="2024">ENE-JUN 2024</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <div class="select-wrapper">
+                            <select class="Genero" name="genero" required>
+                                <option value="" disabled selected>Selecciona tu Carrera</option>
+                                <option value="ISC">Ingenieria en Sistemas Computacionales</option>
+                                <option value="IAG">Ingenieria en Agronomía</option>
+                                <option value="LB">Licenciatura en Biologia</option>
+                                <option value="IAD">Ingenieria en Gestión Empresarial</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="recordar1">
+                        <label for="#"> <input type="checkbox"> Acepto los terminos y condiciones</label>
+                    </div>
+
+                    <button type="submit" class="btnR">Registrarme</button>
+
+                    <div class="registarse">
+                        <p>¿Tienes una cuenta?<a href="#" class="login-link">Iniciar sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <script src="boton.js"></script>
+</body>
+
+</html>
